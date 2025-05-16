@@ -17,7 +17,7 @@ import CoachProfile from './components/CoachProfile';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/asocias">
       <div className="min-h-screen flex flex-col bg-neutral-50">
         <motion.div
           initial={{ opacity: 0 }}
