@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2 text-white mb-4" hidden={true}>
-              <BookOpen size={28} strokeWidth={2} />
-              <span className="font-serif text-xl font-semibold tracking-tight">APC</span>
-            </div>
+            {/*<div className="flex items-center space-x-2 text-white mb-4">*/}
+            {/*  <BookOpen size={28} strokeWidth={2} />*/}
+            {/*  <span className="font-serif text-xl font-semibold tracking-tight">APC</span>*/}
+            {/*</div>*/}
             <p className="text-neutral-400 text-sm leading-relaxed">
               The Association of Psychoanalytic Coaches is dedicated to advancing the practice of
               coaching through psychoanalytic principles, promoting ethical standards, and supporting
