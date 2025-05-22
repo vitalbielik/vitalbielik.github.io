@@ -47,7 +47,7 @@ const EventCard: React.FC<EventProps> = ({
     </div>
     <div className="p-6 md:p-8 flex-grow">
       <h3 className="font-serif text-2xl font-medium mb-3 text-neutral-900">{title}</h3>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <div className="flex items-center">
           <Calendar size={18} className="mr-3 text-primary-600" />
@@ -66,9 +66,9 @@ const EventCard: React.FC<EventProps> = ({
           <span className="text-neutral-700">{speakers.join(', ')}</span>
         </div>
       </div>
-      
+
       <p className="text-neutral-600 mb-6 line-clamp-3">{description}</p>
-      
+
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div className="font-medium text-lg text-primary-800">
           {price}
@@ -83,7 +83,7 @@ const EventCard: React.FC<EventProps> = ({
 
 const EventsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState('upcoming');
-  
+
   const events = [
     {
       title: "The Unconscious in Coaching: Theory and Practice",
@@ -154,14 +154,14 @@ const EventsPage: React.FC = () => {
   ];
 
   // For demonstration purposes, let's just show all events as upcoming
-  const filteredEvents = activeTab === 'upcoming' 
-    ? events 
+  const filteredEvents = activeTab === 'upcoming'
+    ? events
     : [];
 
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-primary-50">
+      <section hidden={true} className="py-20 bg-primary-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1
@@ -172,17 +172,17 @@ const EventsPage: React.FC = () => {
             >
               Events & Programs
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-neutral-600 leading-relaxed mb-10"
             >
-              Join us for workshops, conferences, training programs, and webinars designed to deepen 
+              Join us for workshops, conferences, training programs, and webinars designed to deepen
               your understanding and practice of psychoanalytic coaching.
             </motion.p>
-            
+
             {/* Search and Filter */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -208,7 +208,7 @@ const EventsPage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Events Section */}
       <section className="py-20 bg-neutral-100">
         <div className="container mx-auto px-4">
@@ -239,7 +239,7 @@ const EventsPage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Events List */}
           <div className="space-y-8">
             {filteredEvents.map((event, index) => (
@@ -257,7 +257,7 @@ const EventsPage: React.FC = () => {
               />
             ))}
           </div>
-          
+
           {/* Add to Calendar Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -279,7 +279,7 @@ const EventsPage: React.FC = () => {
           </motion.div>
         </div>
       </section>
-      
+
       {/* Host an Event Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -296,18 +296,18 @@ const EventsPage: React.FC = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-3 mb-6 text-neutral-900">
                 Host an Event with APC
               </h2>
-              
+
               <div className="space-y-6 text-neutral-700">
                 <p>
-                  We welcome proposals for workshops, seminars, and presentations that align with our mission 
-                  of advancing psychoanalytic coaching. If you're an expert in the field and interested in 
+                  We welcome proposals for workshops, seminars, and presentations that align with our mission
+                  of advancing psychoanalytic coaching. If you're an expert in the field and interested in
                   sharing your knowledge, consider collaborating with us.
                 </p>
-                
+
                 <p>
                   Benefits of hosting an event with APC include:
                 </p>
-                
+
                 <ul className="space-y-3">
                   {[
                     "Access to our established community of psychoanalytic coaches",
@@ -322,7 +322,7 @@ const EventsPage: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 <div className="pt-4">
                   <button className="bg-primary-600 hover:bg-primary-700 transition-colors text-white font-medium py-3 px-6 rounded-md inline-flex items-center">
                     Submit a Proposal
@@ -330,7 +330,7 @@ const EventsPage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -347,7 +347,7 @@ const EventsPage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       <CallToAction />
     </div>
   );
