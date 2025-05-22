@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  BookOpen, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
-  Instagram 
+import {
+  BookOpen,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -20,13 +20,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & About */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2 text-white mb-4">
+            <div className="flex items-center space-x-2 text-white mb-4" hidden={true}>
               <BookOpen size={28} strokeWidth={2} />
               <span className="font-serif text-xl font-semibold tracking-tight">APC</span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed">
-              The Association of Psychoanalytic Coaches is dedicated to advancing the practice of 
-              coaching through psychoanalytic principles, promoting ethical standards, and supporting 
+              The Association of Psychoanalytic Coaches is dedicated to advancing the practice of
+              coaching through psychoanalytic principles, promoting ethical standards, and supporting
               coach development.
             </p>
           </div>
@@ -37,8 +37,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               {['About', 'Members', 'Resources', 'Events', 'Contact'].map((item) => (
                 <li key={item}>
-                  <Link 
-                    to={`/${item.toLowerCase()}`} 
+                  <Link
+                    to={`/${item.toLowerCase()}`}
                     className="text-neutral-400 hover:text-primary-300 transition-colors text-sm"
                   >
                     {item}
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div hidden={true}>
             <h3 className="text-white font-medium mb-4 text-lg">Join Our Newsletter</h3>
             <p className="text-neutral-400 text-sm mb-4">
               Stay updated with our latest events and resources.

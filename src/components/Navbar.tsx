@@ -31,14 +31,14 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Members', path: '/members' },
-    { name: 'Resources', path: '/resources' },
+    // { name: 'Resources', path: '/resources' },
     { name: 'Events', path: '/events' },
     { name: 'Contact', path: '/contact' },
   ];
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full bg-white z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white shadow-md py-2'
           : 'bg-transparent py-4'
@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2 text-primary-800">
-            <BookOpen size={28} strokeWidth={2} />
-            <span className="font-serif text-xl font-semibold tracking-tight">APC</span>
+            {/*<BookOpen size={28} strokeWidth={2} />*/}
+            <span className="font-serif text-m text-black font-semibold tracking-tight">International Association <br/> of Psychoanalytic Coaches</span>
           </Link>
 
           {/* Desktop Navigation */}
