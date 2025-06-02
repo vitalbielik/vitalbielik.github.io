@@ -7,22 +7,24 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ResourcesSection from '../components/ResourcesSection';
 import CallToAction from '../components/CallToAction';
 import ContactSection from '../components/ContactSection';
-import OurStorySection from '../../old/src/components/OurStorySection.tsx';
+import CoachProfile from '../components/CoachProfile.tsx';
+import {motion} from 'framer-motion';
+import OurStorySection from '../components/OurStorySection.tsx';
 
 const HomePage: React.FC = () => {
-    return (
-        <div>
-            <Hero/>
-            <AboutSection/>
-            <OurStorySection/>
-            <MembersSection/>
-            <TestimonialsSection/>
-            {/*<ResourcesSection />*/}
-            <EventsSection/>
-            <ContactSection/>
-            <CallToAction/>
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <AboutSection />
+      <OurStorySection />
+      <MembersSection />
+      <TestimonialsSection />
+      {/*<ResourcesSection />*/}
+      <EventsSection />
+      <ContactSection />
+      <CallToAction />
+    </div>
+  );
 };
 
 export default HomePage;

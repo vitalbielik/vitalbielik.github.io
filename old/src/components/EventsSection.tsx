@@ -4,7 +4,6 @@ import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface EventProps {
-  id: string;
   title: string;
   date: string;
   time: string;
@@ -13,7 +12,7 @@ interface EventProps {
   category: string;
 }
 
-const EventCard: React.FC<EventProps> = ({ id, title, date, time, location, image, category }) => (
+const EventCard: React.FC<EventProps> = ({ title, date, time, location, image, category }) => (
   <div className="flex flex-col h-full bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-neutral-100">
     <div className="relative h-48 overflow-hidden">
       <img
@@ -46,7 +45,7 @@ const EventCard: React.FC<EventProps> = ({ id, title, date, time, location, imag
         </div>
       </div>
       <Link
-        to={`/events/${id}`}
+        to="/events"
         className="mt-4 inline-flex items-center text-primary-700 hover:text-primary-800 font-medium text-sm transition-colors"
       >
         Event Details <ArrowRight size={16} className="ml-1" />
@@ -58,7 +57,6 @@ const EventCard: React.FC<EventProps> = ({ id, title, date, time, location, imag
 const EventsSection: React.FC = () => {
   const events = [
     {
-      id: 'unconscious-coaching',
       title: "The Unconscious in Coaching: Theory and Practice",
       date: "June 15, 2025",
       time: "10:00 AM - 4:00 PM",
@@ -67,7 +65,6 @@ const EventsSection: React.FC = () => {
       category: "Workshop"
     },
     {
-      id: 'depth-psychology-conference',
       title: "Annual Conference: Depth Psychology in the Digital Age",
       date: "September 22-24, 2025",
       time: "9:00 AM - 5:00 PM",
@@ -76,7 +73,6 @@ const EventsSection: React.FC = () => {
       category: "Conference"
     },
     {
-      id: 'certification-program',
       title: "Certification Program: Foundations of Psychoanalytic Coaching",
       date: "Starting July 10, 2025",
       time: "Weekly sessions",
@@ -138,7 +134,6 @@ const EventsSection: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
             >
               <EventCard
-                id={event.id}
                 title={event.title}
                 date={event.date}
                 time={event.time}

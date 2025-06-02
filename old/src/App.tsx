@@ -13,8 +13,7 @@ import MembersPage from './pages/MembersPage';
 import ResourcesPage from './pages/ResourcesPage';
 import ContactPage from './pages/ContactPage';
 import EventsPage from './pages/EventsPage';
-import MemberProfile from './pages/MemberProfile';
-import EventDetail from './pages/EventDetail';
+import CoachProfile from './components/CoachProfile';
 
 const App: React.FC = () => {
   return (
@@ -31,10 +30,9 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/members" element={<MembersPage />} />
-              <Route path="/members/:id" element={<MemberProfile />} />
+              <Route path="/members/:id" element={<CoachProfile />} />
               <Route path="/resources" element={<ResourcesPage />} />
               <Route path="/events" element={<EventsPage />} />
-              <Route path="/events/:id" element={<EventDetail />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </main>

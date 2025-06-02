@@ -70,25 +70,25 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter */}
-          {/*<div>*/}
-          {/*  <h3 className="text-white font-medium mb-4 text-lg">Join Our Newsletter</h3>*/}
-          {/*  <p className="text-neutral-400 text-sm mb-4">*/}
-          {/*    Stay updated with our latest events and resources.*/}
-          {/*  </p>*/}
-          {/*  <form className="space-y-3">*/}
-          {/*    <input*/}
-          {/*      type="email"*/}
-          {/*      placeholder="Your email address"*/}
-          {/*      className="bg-neutral-800 px-4 py-2 rounded w-full text-sm text-white focus:outline-none focus:ring-2 focus:ring-primary-500"*/}
-          {/*    />*/}
-          {/*    <button*/}
-          {/*      type="submit"*/}
-          {/*      className="bg-primary-700 hover:bg-primary-600 transition-colors text-white px-4 py-2 rounded text-sm w-full"*/}
-          {/*    >*/}
-          {/*      Subscribe*/}
-          {/*    </button>*/}
-          {/*  </form>*/}
-          {/*</div>*/}
+          <div hidden={true}>
+            <h3 className="text-white font-medium mb-4 text-lg">Join Our Newsletter</h3>
+            <p className="text-neutral-400 text-sm mb-4">
+              Stay updated with our latest events and resources.
+            </p>
+            <form className="space-y-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="bg-neutral-800 px-4 py-2 rounded w-full text-sm text-white focus:outline-none focus:ring-2 focus:ring-primary-500"
+              />
+              <button
+                type="submit"
+                className="bg-primary-700 hover:bg-primary-600 transition-colors text-white px-4 py-2 rounded text-sm w-full"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
 
         {/* Social & Copyright */}

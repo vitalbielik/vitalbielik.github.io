@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { coaches } from './CoachProfile';
 
 interface MemberProps {
@@ -12,36 +12,28 @@ interface MemberProps {
   bio: string;
 }
 
-const MemberCard: React.FC<MemberProps> = ({ id, image, name, title, bio }) => {
-  const navigate = useNavigate();
-
-  const handleViewProfile = () => {
-    navigate(`/members/${id}`);
-  };
-
-  return (
-    <div className="flex flex-col h-full overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white border border-neutral-100">
-      <div className="h-72 overflow-hidden">
-        <img 
-          src={image} 
-          alt={name} 
-          className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-        />
-      </div>
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="font-serif text-xl font-medium mb-1 text-neutral-900">{name}</h3>
-        <p className="text-primary-600 text-sm mb-4">{title}</p>
-        <p className="text-neutral-600 text-sm line-clamp-4 mb-4 flex-grow">{bio}</p>
-        <button 
-          onClick={handleViewProfile}
-          className="text-primary-700 hover:text-primary-800 font-medium text-sm inline-flex items-center mt-2 transition-colors cursor-pointer"
-        >
-          View Profile <ArrowRight size={16} className="ml-1" />
-        </button>
-      </div>
+const MemberCard: React.FC<MemberProps> = ({ id, image, name, title, bio }) => (
+  <div className="flex flex-col h-full overflow-hidden rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white border border-neutral-100">
+    <div className="h-72 overflow-hidden">
+      <img 
+        src={image} 
+        alt={name} 
+        className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+      />
     </div>
-  );
-};
+    <div className="p-6 flex flex-col flex-grow">
+      <h3 className="font-serif text-xl font-medium mb-1 text-neutral-900">{name}</h3>
+      <p className="text-primary-600 text-sm mb-4">{title}</p>
+      <p className="text-neutral-600 text-sm line-clamp-4 mb-4 flex-grow">{bio}</p>
+      <Link 
+        to={`/members/${id}`}
+        className="text-primary-700 hover:text-primary-800 font-medium text-sm inline-flex items-center mt-2 transition-colors"
+      >
+        View Profile <ArrowRight size={16} className="ml-1" />
+      </Link>
+    </div>
+  </div>
+);
 
 const MembersSection: React.FC = () => {
   return (
