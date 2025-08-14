@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vitalbielik.github.io/asocias",
+  "homepage": "https://vitalbielik.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

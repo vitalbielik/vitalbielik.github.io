@@ -20,23 +20,27 @@ const OurStorySection: React.FC = () => {
                         </h2>
 
                         <div className="space-y-6 text-neutral-700">
-                            <p>
-                                Founded in 2010 by a group of psychologists, psychoanalysts and executive coaches, the
-                                Association of Psychoanalytic Coaches emerged from a shared vision to bridge the gap
-                                between traditional coaching methodologies and the depth-oriented insights of
-                                psychoanalytic theory.
-                            </p>
-                            <p>
-                                Our founders recognized that while coaching focuses on future goals and action, the
-                                psychoanalytic tradition offers profound insights into unconscious motivations and patterns
-                                that can either facilitate or hinder growth. By integrating these approaches, we created
-                                a new paradigm in coaching that addresses both conscious aspirations and unconscious dynamics.
-                            </p>
-                            <p>
-                                Today, the APC has grown into a global community of over 1,200 practitioners across
-                                42 countries, united by our commitment to depth-oriented coaching that facilitates lasting
-                                transformation for individuals, teams, and organizations.
-                            </p>
+                            <p>Founded in 2010 by a group of psychologists, psychoanalysts, and coaches, the
+                                Association of Psychoanalytic Coaching (APC) was established with the goal of
+                                integrating pragmatic coaching methods, specifically designed for rapid goal
+                                achievement, with in-depth exploration of unconscious processes.</p>
+                            <p>Our founders recognized that traditional coaching, which focuses on goals and action,
+                                often overlooks the unconscious motivations and internal conflicts that influence
+                                behavior beyond conscious control.</p>
+                            <p>Our innovative approach, psychoanalytic coaching, uncovers deep unconscious dynamics,
+                                providing them with meaning. It enables clients to effectively achieve their goals
+                                by overcoming hidden psychological barriers. In doing so, clients gain a deep
+                                understanding of themselves and clarity about their true aspirations. This frees up
+                                internal resources for achieving goals and increases the level of subjective
+                                well-being. Thanks to psychoanalytic coaching, this feeling of harmony and
+                                satisfaction accompanies both the process of achieving goals and life in
+                                general.</p>
+                            <p>Such results are not available with standard coaching methods. This is a unique
+                                method that harmoniously combines conscious work with a goal and working through the
+                                unconscious, ensuring a holistic transformation.</p>
+                            <p>Today, APC unites more than 1,200 practitioners in 38 countries, forming a global
+                                community dedicated to in-depth coaching that fosters lasting change for
+                                individuals, teams, and organizations.</p>
                         </div>
                     </motion.div>
 

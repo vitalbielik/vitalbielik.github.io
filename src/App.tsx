@@ -18,7 +18,7 @@ import EventDetail from './pages/EventDetail';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/asocias">
+    <Router>
       <div className="min-h-screen flex flex-col bg-neutral-50">
         <motion.div
           initial={{ opacity: 0 }}

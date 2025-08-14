@@ -7,7 +7,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ResourcesSection from '../components/ResourcesSection';
 import CallToAction from '../components/CallToAction';
 import ContactSection from '../components/ContactSection';
-import OurStorySection from '../../old/src/components/OurStorySection.tsx';
+import OurStorySection from '../components/OurStorySection.tsx';
 
 const HomePage: React.FC = () => {
     return (
